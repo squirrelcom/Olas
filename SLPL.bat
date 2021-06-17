@@ -5,16 +5,15 @@ set dir=
 set func_scan=true
 cls
 :term
-echo Olas by Nick T.
-echo https://github.com/NikTee/Olas
+echo SLPL
 ::echo Modification by YourNameHere
 ::Code above to give yourself credit if you distribute your own version of Olas.
-echo Type the name of your script to run it. (Example: "script.ola")
+echo Type the name of your script to run it. (Example: "script.slp")
 echo.
 :term2
 echo.
 set /p line=%CD%^>
-if not "%line:.ola=%"=="%line%" goto ola_run
+if not "%line:.ola=%"=="%line%" goto slp_run
 if not "%line:ifval1 =%"=="%line%" goto ifval1
 if not "%line:ifcond =%"=="%line%" goto ifcond
 if not "%line:ifval2 =%"=="%line%" goto ifval2
@@ -44,7 +43,7 @@ goto syntax_error_term
 
 :not_term
 echo.
-echo The function you used is not supported in the Olas terminal.
+echo The function you used is not supported in the SLPL terminal.
 goto term2
 
 :done_scanning
@@ -604,7 +603,7 @@ goto term2
 )
 
 
-:ola_run
+:slp_run
 if exist %line% (
 set script=%line%
 goto done_scanning
@@ -639,5 +638,5 @@ goto term2
 
 :end
 echo.
-echo Program Done
+echo Squirrel Local Page completed
 pause>nul
