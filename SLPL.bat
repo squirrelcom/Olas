@@ -4,7 +4,19 @@ cd %~dp0
 set dir=
 set func_scan=true
 cls
-:term
+:term                             
+echo               (*********(    
+echo               /,,*    /*,,*  
+echo           ****/,,*      ,,*  
+echo           *,**/,,,*****,,*#  
+echo           *,**/,,*           
+echo      (/////(**/,,*           
+echo   (///*   /////**/           
+echo   (///    *,,**//////(       
+echo     ////////(////////(       
+echo            ////              
+echo   ///#     #///              
+echo    (/////////(               
 echo SLPL the Squirrel Local Pages Language
 echo Type the name of your script to run it. (Example: "script.slp")
 echo.
