@@ -5,15 +5,13 @@ set dir=
 set func_scan=true
 cls
 :term
-echo SLPL
-::echo Modification by YourNameHere
-::Code above to give yourself credit if you distribute your own version of Olas.
+echo SLPL the Squirrel Local Pages Language
 echo Type the name of your script to run it. (Example: "script.slp")
 echo.
 :term2
 echo.
 set /p line=%CD%^>
-if not "%line:.ola=%"=="%line%" goto slp_run
+if not "%line:.slp=%"=="%line%" goto slp_run
 if not "%line:ifval1 =%"=="%line%" goto ifval1
 if not "%line:ifcond =%"=="%line%" goto ifcond
 if not "%line:ifval2 =%"=="%line%" goto ifval2
