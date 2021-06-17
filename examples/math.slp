@@ -1,6 +1,6 @@
 
 -func start
-print Welcome to the Olas calculator.
+print Welcome to the SLPL calculator.
 newline
 print Would you like to Add, Subtract, Multiply, Or Divide?
 newline
